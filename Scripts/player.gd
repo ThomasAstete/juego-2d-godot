@@ -41,7 +41,8 @@ func _process(delta):
 	position += velocity * delta
 	position = position.clamp(Vector2.ZERO, screen_size)
 
-func _on_body_entered(body: Node2D) -> void:
-	hide()
+func _on_body_entered(_body):
+	hide() # Player disappears after being hit.
 	hit.emit()
+	# Must be deferred as we can't change physics properties on a physics callback.
 	$CollisionShape2D.set_deferred("disabled", true)
