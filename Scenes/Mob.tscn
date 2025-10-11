@@ -50,7 +50,7 @@ animations = [{
 radius = 36.0
 height = 90.0
 
-[node name="mob" type="RigidBody2D"]
+[node name="mob" type="RigidBody2D" groups=["mobs"]]
 collision_mask = 0
 physics_material_override = SubResource("PhysicsMaterial_u0piq")
 gravity_scale = 0.0
