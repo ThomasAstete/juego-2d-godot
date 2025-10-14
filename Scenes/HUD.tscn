@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://c7n5wxgquude4"]
 
-[ext_resource type="Script" uid="uid://8ftso3iaufs6" path="res://Scripts/hud.gd" id="1_jo1ms"]
+[ext_resource type="Script" uid="uid://8ftso3iaufs6" path="res://Scripts/HUD.gd" id="1_jo1ms"]
 [ext_resource type="FontFile" uid="uid://cgi34nejbmrrf" path="res://ui/Xolonium-Regular.ttf" id="2_psnte"]
 
-[node name="Hud" type="CanvasLayer"]
+[node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_jo1ms")
 
 [node name="ScoreLabel" type="Label" parent="."]

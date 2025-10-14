@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://dnwoluj15p8c0"]
 
-[ext_resource type="Script" uid="uid://jkkp2n4k4wrb" path="res://Scripts/mob.gd" id="1_spujv"]
+[ext_resource type="Script" uid="uid://jkkp2n4k4wrb" path="res://Scripts/Mob.gd" id="1_spujv"]
 [ext_resource type="Texture2D" uid="uid://scgid3jyvcqj" path="res://Assets/sprites/enemyFlyingAlt_1.png" id="1_u40of"]
 [ext_resource type="Texture2D" uid="uid://7mv717b8tp08" path="res://Assets/sprites/enemyFlyingAlt_2.png" id="2_spujv"]
 [ext_resource type="Texture2D" uid="uid://cfhk32fishv8n" path="res://Assets/sprites/enemySwimming_1.png" id="3_8ivhl"]
@@ -47,8 +47,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_spujv"]
-radius = 36.0
-height = 90.0
+radius = 20.0
+height = 40.0
 
 [node name="mob" type="RigidBody2D" groups=["mobs"]]
 collision_mask = 0
@@ -58,7 +58,7 @@ script = ExtResource("1_spujv")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.75, 0.75)
+scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_shaxa")
 animation = &"Walk"
 frame_progress = 0.9504817
